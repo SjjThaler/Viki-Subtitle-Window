@@ -1,0 +1,14 @@
+function getCurrentSubtitleText() {
+    const subtitleElement = document.querySelector('.vjs-text-track-cue-zh > div');
+    
+    if (subtitleElement) {
+        // .textContent gets the plain text inside the div
+        return subtitleElement.textContent.trim();
+    }
+    
+    // Returns an empty string if no subtitle is currently displayed
+    return ''; 
+}
+
+// Example usage in the console:
+console.log(getCurrentSubtitleText());
