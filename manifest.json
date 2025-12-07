@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Viki Subtitle Side Viewer",
+  "version": "1.0",
+  "description": "Displays Viki subtitles on the right side of the screen.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.viki.com/*"],
+      "css": ["sidebar.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
