@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.viki.com/*"],
-      "css": ["sidebar.css"],
+      "css": ["styles.css"],
       "js": ["content.js"]
     }
   ],
