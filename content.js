@@ -1,5 +1,5 @@
 function getCurrentSubtitleText() {
-    const subtitleElement = document.querySelector('.vjs-text-track-cue-zh > div');
+    const subtitleElement = document.querySelector('[class*="vjs-text-track-cue-"] > div');
     
     if (subtitleElement) {
         // .textContent gets the plain text inside the div
