@@ -1,0 +1,19 @@
+/* Ensure your injected div has a high z-index and fixed position */
+#viki-side-subtitle-display {
+    position: fixed; /* Stays in place when scrolling */
+    top: 0;
+    right: 0; /* Positions it on the right side of the viewport */
+    width: 300px; /* Adjust width as desired */
+    height: 100vh; /* Full viewport height */
+    z-index: 99999; /* Ensures it is on top of other page elements */
+    background-color: rgba(0, 0, 0, 0.85); /* Dark, semi-transparent background */
+    color: white; /* White text for readability */
+    padding: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    overflow-y: auto; /* Allows scrolling if text becomes too long */
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.5); /* A subtle shadow */
+    box-sizing: border-box; /* Includes padding in the width/height */
+    white-space: pre-wrap; /* Preserves formatting and allows wrapping */
+    text-align: left;
+}
